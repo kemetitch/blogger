@@ -1,0 +1,231 @@
+:root{
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+/* start navbar */
+.navbar{
+    background-color: var(--white);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .cat .nav-link{
+color: var(--text-light)
+}
+.navbar .social
+{
+    gap: 10px;
+}
+.navbar .social .nav-link{
+    color: var(--text-gray);
+}
+.navbar .navbar-brand{
+    color: var(--text-gray);
+}
+.navbar .nav-item{
+    transition: 0.3s;
+}
+.navbar .nav-item:hover{
+background-color: var(--midnight);
+}
+.navbar .nav-item:hover .nav-link{
+    color: white;
+}
+/* end navbar */
+/* start landing */
+.landing{
+    height: 110vh;
+    background-image: url("../assets/Background-image.png");
+    background-size: cover;
+}
+.landing button,.btn{
+    background-color: #a1c4fd;
+    border: 1px solid #a1c4fd;
+    border-radius: 30px;
+    width: 150px;
+    transition: 0.3s;
+}
+.landing button:hover{
+    background-color: transparent;
+    border: 1px solid #a1c4fd;
+    color: white;
+}
+/* end landing */
+/* start services */
+.services{
+    padding:100px 0;
+    background-image: url("../assets/Abract01.png");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.services .blog-content{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+.services .blog-post{
+padding-top: 6rem;
+}
+.services .blog-title{
+    padding: 2rem 0;
+}
+.services .blog-title span{
+    display: block;
+}
+.services .owl-nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: var(--midnight);
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+/* end services */
+/* start posts */
+.posts{
+    padding: 100px 0 60px;
+}
+.posts .content .post-image{
+    position: relative;
+}
+.posts .content .image{
+    overflow: hidden;
+}
+.posts .content .image img{
+    transition: 0.3s;
+}
+.posts .content .image img:hover{
+    transform: scale(1.1,1.1);
+}
+.posts .content .icons{
+    position: absolute;
+    background: var(--sky);
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-gray);
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    min-width: 400px;
+    bottom: -30px;
+}
+.posts .content .icons span{
+    margin-left: 10px;
+}
+.posts .content h3{
+    margin-top: 50px;
+}
+.posts .content p{
+    color: var(--text-gray);
+}
+.posts .content .post-btn{
+    border-radius: 0px;
+}
+.posts .aside .news .box{
+    min-width: 300px;
+    background: var(--sky);
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.posts .pop-post h2{
+    padding-top: 8rem;
+}
+.posts .pop-post .post-content .image img{
+    width: 100%;
+}
+.posts .post-content .info{
+    bottom: 63px;
+    background: white;
+    padding: .4rem .1rem ;
+}
+.posts .pop-post .post-content .info span{
+    font-size: 14px;
+}
+.posts .post-content .title{
+    font-size: 1rem;
+}
+.posts .pop-post .newslit{
+    padding-top: 10rem;
+}
+.posts .pop-post .post-content button{
+    background: var(--sky);
+    border: none;
+}
+.posts .pop-post .poptag{
+    margin-top: 10rem;
+}
+.posts .poptag .tag-btn{
+    width: fit-content;
+    margin: 0.4rem 0.6rem;
+}
+/* end posts */
+/* start footer */
+footer {
+    padding: 50px 0;
+    background-color: var(--bg-color);
+}
+footer .row h2{
+    color: white
+}
+footer .row p{
+    color: var(--text-gray);
+}
+footer .row [class*=col-]:nth-child(2) input{
+    background-color: black;
+    border: none;
+    padding: 5px 10px;
+}
+footer .row [class*=col-]:nth-child(3) .images{
+    gap: 10px;
+}
+footer .row [class*=col-]:nth-child(3) .images .image img{
+max-width: 100%;
+}
+footer .row [class*=col-]:nth-child(4) ul li a{
+    text-decoration: none;
+    color: white;
+}
+.copy-right{
+    color: var(--text-gray);
+    background-color: var(--bg-color);
+}
+.copy-right span{
+    color: white;
+    font-weight: bold;
+}
+
+
+/* end footer */
